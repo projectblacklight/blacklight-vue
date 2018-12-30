@@ -1,0 +1,34 @@
+{
+  "name": "blacklight-vue",
+  "version": "0.0.1",
+  "description": "VueJS frontend for Blacklight",
+  "module": "src/blacklight.js",
+  "homepage": "https://github.com/projectblacklight/blacklight-vue",
+  "contributors": [
+    {
+      "name": "Justin Coyne",
+      "url": "https://github.com/jcoyne"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/projectblacklight/blacklight-vue/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectblacklight/blacklight-vue.git"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vue": "^2.5.21"
+  },
+  "keywords": [
+    "Blacklight",
+    "VueJS",
+    "Search"
+  ]
+}
