@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Title from 'blacklight/result/title.vue'
-import PropertyList from 'blacklight/result/property_list.vue'
+import Title from './title'
+import PropertyList from './property_list'
 
 export default {
   props: ['item'],

@@ -8,7 +8,7 @@
 
 <script>
 
-import ResultItem from 'blacklight/result/item.vue'
+import ResultItem from './item'
 
 export default {
   components: {

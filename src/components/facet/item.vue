@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import FacetValue from 'blacklight/facet/value.vue'
+import FacetValue from './value'
 
 export default {
   components: {

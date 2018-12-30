@@ -11,7 +11,7 @@
 
 <script>
 
-import AppliedFilter from 'blacklight/search/appliedFilter'
+import AppliedFilter from './appliedFilter'
 
 export default {
   components: {
