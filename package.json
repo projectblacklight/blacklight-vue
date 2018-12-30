@@ -20,9 +20,10 @@
   "files": [
     "src"
   ],
-  "scripts": {
+  "scripts": {},
+  "dependencies": {
+    "array.prototype.flatmap": "^1.2.1"
   },
-  "dependencies": {},
   "devDependencies": {
     "vue": "^2.5.21"
   },
