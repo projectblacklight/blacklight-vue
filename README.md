@@ -16,7 +16,7 @@ Vue.use(Blacklight)
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  BlacklightRoutes
+  routes: BlacklightRoutes
 })
 
 new Vue({
