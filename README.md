@@ -76,7 +76,8 @@ and then change the styles in `src/App.vue` to be:
 
 ```vue
 <style lang="scss">
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~blacklight-vue/scss/blacklight.scss';
 </style>
 ```
 
