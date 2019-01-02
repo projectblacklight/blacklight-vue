@@ -3,7 +3,12 @@
 
 [![npm version](https://img.shields.io/npm/v/blacklight-vue.svg)](https://www.npmjs.com/package/blacklight-vue)
 
-## Create a project using Vue JS CLI
+See a demo usage of this library at https://github.com/projectblacklight/blacklight-vue-demo
+
+
+## Getting started:
+
+The first step is to create a project using [Vue JS CLI](https://cli.vuejs.org/guide/creating-a-project.html#vue-create).
 
 Then add sass support:
 ```
