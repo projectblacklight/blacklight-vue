@@ -26,15 +26,15 @@ const router = new VueRouter({
   routes: BlacklightRoutes
 })
 
+// Add address to the API server
+Vue.http.options.root = 'http://demo.projectblacklight.org'
+Vue.http.options.headers = {
+  Accept: 'application/json'
+}
+
 new Vue({
   router,
-  render: h => h(App),
-  http: {
-    root: 'http://demo.projectblacklight.org',
-    headers: {
-      Accept: 'application/json'
-    }
-  }
+  render: h => h(App)
 }).$mount('#app')
 ```
 
