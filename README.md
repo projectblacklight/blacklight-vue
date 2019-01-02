@@ -1,6 +1,8 @@
 # VueJS for Blacklight
 
 
+[![npm version](https://img.shields.io/npm/v/blacklight-vue.svg)](https://www.npmjs.com/package/blacklight-vue)
+
 ## Create a project using Vue JS CLI
 
 Then add sass support:
