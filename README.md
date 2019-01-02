@@ -22,6 +22,12 @@ const router = new VueRouter({
 new Vue({
   router,
   render: h => h(App),
+  http: {
+    root: 'http://demo.projectblacklight.org',
+    headers: {
+      Accept: 'application/json'
+    }
+  }
 }).$mount('#app')
 ```
 

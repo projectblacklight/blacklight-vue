@@ -1,6 +1,7 @@
 import Search from './components/Search';
 import ShowPage from './components/ShowPage';
 import VueProgressBar from 'vue-progressbar'
+import VueResource from 'vue-resource'
 
 const progressOptions = {
   color: '#e62117',
@@ -23,7 +24,7 @@ const Blacklight = {
   // It takes the global Vue object as well as user-defined options.
   install(Vue, options) {
     Vue.use(VueProgressBar, progressOptions)
-
+    Vue.use(VueResource)
     // We call Vue.mixin() here to inject functionality into all components.
   	Vue.mixin({
       // Anything added to a mixin will be injected into all components.

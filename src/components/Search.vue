@@ -42,10 +42,11 @@ export default {
   methods: {
     // This is passed a solr query url and it transforms it to a frontend url
     solrUrlToPath: function(solrUrl) {
-      return '/catalog/' + solrUrl.split('?', 2)[1]
+      return 'catalog/' + solrUrl.split('?', 2)[1]
     },
     retrieveResults: function(url) {
       this.$Progress.start()
+      console.log(`get ${url}`)
       this.$http.get(url).then(function(response){
           this.result = new Result(response.data)
           this.$Progress.finish()
@@ -63,7 +64,7 @@ export default {
       // Get rid of any spaces that have been encoded as '+'
       this.q = query[1].replace(/\+/g, " ")
 
-      this.retrieveResults('/catalog?' + filter)
+      this.retrieveResults('catalog?' + filter)
     }
   },
   computed: {
@@ -80,7 +81,7 @@ export default {
   created() {
     // Triggered when "search" is pressed
     this.$on('send', (text) => {
-      this.$router.push(this.solrUrlToPath(`/catalog?q=${text}`))
+      this.$router.push(this.solrUrlToPath(`catalog?q=${text}`))
     })
 
     // Triggered when "next" or "previous" page is pressed
