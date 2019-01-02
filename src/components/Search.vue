@@ -42,7 +42,7 @@ export default {
   methods: {
     // This is passed a solr query url and it transforms it to a frontend url
     solrUrlToPath: function(solrUrl) {
-      return 'catalog/' + solrUrl.split('?', 2)[1]
+      return '/catalog/' + solrUrl.split('?', 2)[1]
     },
     retrieveResults: function(url) {
       this.$Progress.start()
@@ -81,6 +81,7 @@ export default {
   created() {
     // Triggered when "search" is pressed
     this.$on('send', (text) => {
+      var path = this.solrUrlToPath(`catalog?q=${text}`)
       this.$router.push(this.solrUrlToPath(`catalog?q=${text}`))
     })
 
