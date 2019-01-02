@@ -18,7 +18,8 @@
     "url": "git+https://github.com/projectblacklight/blacklight-vue.git"
   },
   "files": [
-    "src"
+    "src",
+    "scss/**/*.scss"
   ],
   "scripts": {},
   "dependencies": {
