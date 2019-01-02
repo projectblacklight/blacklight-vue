@@ -12,6 +12,8 @@ yarn add sass-loader node-sass
 
 Then add routes. In main.js add the following:
 ```js
+import Blacklight from 'blacklight-vue'
+import BlacklightRoutes from 'blacklight-vue/src/routes'
 import VueRouter from 'vue-router'
 import Home from './components/Home.vue'
 
