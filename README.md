@@ -9,7 +9,7 @@ yarn add sass-loader node-sass
 ```
 
 Then add routes. In main.js add the following:
-```
+```js
 import VueRouter from 'vue-router'
 import Home from './components/Home.vue'
 
@@ -35,7 +35,7 @@ new Vue({
 ```
 
 Then in `App.vue` add the following to the template:
-```
+```html
 <div id="app">
   <vue-progress-bar></vue-progress-bar>
   <router-view></router-view>
@@ -44,7 +44,7 @@ Then in `App.vue` add the following to the template:
 
 And `components/Home.vue` could look like this:
 
-```
+```vue
 <template>
   <div class="hello">
     <Search />
@@ -62,6 +62,22 @@ export default {
   }
 }
 </script>
+```
+
+Finally, if you want to use bootstrap, install it.
+I used these directions: https://medium.com/@BjornKrols/integrating-and-customising-bootstrap-4-in-vue-js-cbc29ba7688e
+But all you need to do is:
+
+```
+yarn add bootstrap
+```
+
+and then change the styles in `src/App.vue` to be:
+
+```vue
+<style lang="scss">
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+</style>
 ```
 
 ## Install dependencies
