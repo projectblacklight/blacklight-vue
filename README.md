@@ -36,3 +36,10 @@ new Vue({
 ```
 npm install
 ```
+
+## Configure
+
+You can set the title field to use by doing:
+```
+Vue.prototype.$titleField = 'title_display'
+```
