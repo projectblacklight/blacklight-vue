@@ -45,28 +45,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import '../../bootstrap_overrides.scss';
 
-  .collapse-toggle:after {
-    content: "❯";
-    float: right;
-    transform: rotate(90deg);
-  }
-  .collapse-toggle.collapsed:after {
-    transform: rotate(0deg);
-    transition: transform 0.1s ease;
-  }
-  .card-header {
-    font-size: 1rem;
-    background-color: $card-background;
-    a {
-      color: $body-color;
-    }
-  }
-  .card {
-    margin-bottom: 1rem;
-  }
-  .card-body {
-    padding: 1rem;
-  }
 </style>
