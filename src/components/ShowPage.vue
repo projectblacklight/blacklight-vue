@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     load: function() {
-      const endpoint = `/catalog/${encodeURIComponent(this.$route.params.id)}`
+      const endpoint = `catalog/${encodeURIComponent(this.$route.params.id)}`
       this.$http.get(endpoint).then(function(response){
           this.item = response.data.data
       }, function(error){
