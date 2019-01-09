@@ -46,7 +46,6 @@ export default {
     },
     retrieveResults: function(url) {
       this.$Progress.start()
-      console.log(`get ${url}`)
       this.$http.get(url).then(function(response){
           this.result = new Result(response.data)
           this.$Progress.finish()
