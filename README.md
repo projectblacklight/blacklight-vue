@@ -10,6 +10,11 @@ See a demo usage of this library at https://github.com/projectblacklight/blackli
 
 The first step is to create a project using [Vue JS CLI](https://cli.vuejs.org/guide/creating-a-project.html#vue-create).
 
+Next add blacklight-vue:
+```
+yarn add blacklight-vue
+```
+
 Then add sass support:
 ```
 yarn add sass-loader node-sass
